@@ -1,0 +1,50 @@
+:root{
+  --dark-blue:#032541;
+  --dark-orang:#FF5F49;
+}
+.nav{
+  background-color:black ;
+  color:var(--dark-orang);
+}
+.App{
+  background-color: black;
+  padding-bottom: 10px;
+}
+.box{
+  position: relative;
+  transition: .3s;
+}
+.box:hover{
+  box-shadow: -5px -5px 20px lightblue;
+  transform: scale(1.1,1.1);
+}
+img{
+  transition: .3s;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+   opacity: 0;
+  visibility: none;
+  transition: 0.5s ease;
+  background-color: #393839;
+  
+}
+.overlay:hover{
+  opacity: .8;
+  
+}
+.overlay .info{
+  color:white;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
