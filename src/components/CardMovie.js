@@ -8,7 +8,7 @@ const CardMovie = ({mov}) => {
     
     return(
         <Col xs="4" md="3" lg="2" className="mb-3">
-            
+            <Link to={`/movie/${mov.id}`}>
             <div className="box">
            <img src={`https://image.tmdb.org/t/p/w500/`+ mov.poster_path} className="img-fluid"/>
               <div className="overlay text-center  p-2">
@@ -22,7 +22,7 @@ const CardMovie = ({mov}) => {
             </div>
             
             </div>
-           <button>Watch Now</button>
+           </Link>
         </Col>
     )
 }
